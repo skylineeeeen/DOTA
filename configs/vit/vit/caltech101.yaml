@@ -1,0 +1,7 @@
+# Configuration for DOTA Hyperparameters
+
+ϵ: 0.002 # 添加小的扰动求逆矩阵时避免发生错误
+γ: 0
+σ2: 0.002
+η: 0.3
+ρ: 0.02

@@ -1,0 +1,7 @@
+# Configuration for DOTA Hyperparameters
+
+epsilon: 0.00002 # 添加小的扰动求逆矩阵时避免发生错误
+gamma: 0
+sigma: 0.002
+eta: 0.1
+rho: 0.0025
