@@ -1,0 +1,6 @@
+# Configuration for DOTA Hyperparameters
+
+epsilon: 0.002
+sigma: 0.002
+eta: 0.3
+rho: 0.02
