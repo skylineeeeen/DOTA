@@ -155,7 +155,8 @@ def main():
 
         test_loader, classnames, template = build_test_data_loader(dataset_name, args.data_root, preprocess)
         clip_weights = clip_classifier(classnames, template, clip_model)
-        dota_model = DOTA(cfg, input_shape=clip_weights.shape[0], num_classes=clip_weights.shape[1], clip_weights=clip_weights.clone())
+        tensor_matrix = torch.full((clip_weights.shape[0], clip_weights.shape[1]), 0.001)
+        dota_model = DOTA(cfg, input_shape=clip_weights.shape[0], num_classes=clip_weights.shape[1], clip_weights=tensor_matrix)
         dota_model.eval()
 
         acc = run_test_dota(cfg, test_loader, clip_model, clip_weights, dota_model, logger)
