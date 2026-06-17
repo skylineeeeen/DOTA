@@ -16,6 +16,7 @@ DOTA is a distributional test-time adaptation method for vision-language models.
 ### Highlights
 
 * **Distributional adaptation:** estimates class-conditional distributions of test embeddings.
+* **Full-stream utilization:** leverages all incoming test samples for distribution estimation instead of relying only on selected cached instances.
 * **Online test-time learning:** continually updates the test-time classifier as new samples arrive.
 * **Training-free inference:** adapts CLIP without backpropagation or parameter updates.
 
