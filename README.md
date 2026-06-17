@@ -10,7 +10,7 @@ This repository provides the official implementation of **DOTA: Distributional T
 
 ### Overview
 
-**DOTA** is a distributional test-time adaptation method for vision-language models. Instead of storing only a limited number of representative test samples, DOTA continually estimates the underlying distribution of test embeddings and computes posterior probabilities based on Bayes' theorem for online adaptation.
+DOTA is a distributional test-time adaptation method for vision-language models. Instead of storing only a limited number of representative test samples, DOTA continually estimates the underlying distribution of test embeddings and computes posterior probabilities based on Bayes' theorem for online adaptation.
 
 
 ### Highlights
