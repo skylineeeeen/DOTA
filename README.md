@@ -27,9 +27,9 @@ DOTA builds a test-time distributional classifier on top of frozen CLIP features
 ---
 ## Test-Time Adaptation Landscape
 
-Test-time adaptation (TTA) aims to improve model robustness under distribution shifts by adapting models or predictions using unlabeled test data. We organize representative studies into four broad lines, from classical classification models to vision-language models and recent benchmark-oriented analyses.
+> This section situates DOTA within the broader TTA literature. Readers mainly interested in running the code can skip to [Usage](#usage).
 
-This section situates DOTA within the broader TTA literature; readers mainly interested in running the code can skip to [Usage](#usage).
+Test-time adaptation (TTA) aims to improve model robustness under distribution shifts by adapting models or predictions using unlabeled test data. We organize representative studies into four broad lines, from classical classification models to vision-language models and recent benchmark-oriented analyses.
 
 ---
 
