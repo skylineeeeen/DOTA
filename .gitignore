@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.so
+
+log/
+logs/
+dataset/
+datasets_data/
+data/
+
+.DS_Store
+.vscode/
+.idea/

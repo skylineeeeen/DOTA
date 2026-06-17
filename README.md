@@ -13,6 +13,9 @@ conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit
 pip install -r requirements.txt
 ```
 
+### Skill
+This repository includes a reusable skill at `skills/dota/` for AI coding agents to run, modify, and troubleshoot DOTA workflows. Agents can read this folder directly as project-specific operating guidance.
+
 ### Dataset
 To set up all required datasets, kindly refer to the guidance in [DATASETS.md](docs/DATASETS.md), which incorporates steps for two benchmarks.
 
@@ -22,25 +25,16 @@ The configuration for DOTA hyperparameters in `configs/dataset.yaml` can be tail
 
 ### Running
 
-Below are instructions for running DOTA on both Out-of-Distribution (OOD) and Cross-Domain benchmarks using various backbone architectures. Follow the steps suited to your specific needs:"
+Below are instructions for running DOTA on both Out-of-Distribution (OOD) and Cross-Domain benchmarks using the provided ViT-B/16 scripts.
 
 #### OOD Benchmark
-* **ResNet50**: Run DOTA on the OOD Benchmark using the ResNet50 model:
-```
-bash ./scripts/run_ood_benchmark_rn50.sh 
-```
 * **ViT/B-16**: Run DOTA on the OOD Benchmark using the ViT/B-16 model.
 ```
 bash ./scripts/run_ood_benchmark_vit.sh 
 ```
 
 #### Cross-Domain Benchmark
-* **ResNet50**: Run DOTA on the Cross-Domain Benchmark using the ResNet50 model:
-```
-bash ./scripts/run_cd_benchmark_rn50.sh 
-```
 * **ViT/B-16**: Run DOTA on the Cross-Domain Benchmark using the ViT/B-16 model.
 ```
 bash ./scripts/run_cd_benchmark_vit.sh 
 ```
-
