@@ -158,7 +158,16 @@ To prepare the required datasets, please refer to [DATASETS.md](docs/DATASETS.md
 
 #### Skill
 
-This repository includes a reusable skill in `skills/dota/` for AI coding agents to run, modify, and troubleshoot DOTA workflows. Agents can directly read this folder as project-specific operating guidance.
+This repository includes a project-local Codex skill in `skills/dota/` for AI coding agents to run, modify, and troubleshoot DOTA workflows while working in this checkout.
+
+The checked-in path is intentional: the skill is versioned with DOTA because its instructions only apply to this repository. Invoke it explicitly from this checkout by asking Codex to use the skill at `skills/dota/`.
+
+If you work on this repository often and want Codex to auto-discover the skill from your user-level skills directory, create a symlink instead of copying it:
+
+```bash
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+ln -s "$(pwd)/skills/dota" "${CODEX_HOME:-$HOME/.codex}/skills/dota"
+```
 
 ---
 

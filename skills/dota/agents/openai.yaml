@@ -1,0 +1,4 @@
+interface:
+  display_name: "DOTA"
+  short_description: "Operate and troubleshoot the DOTA research codebase"
+  default_prompt: "Use $dota to run, modify, or troubleshoot DOTA benchmark workflows."
